@@ -4,7 +4,7 @@
 
 Added two additional Bootstrap elements to index.html code:
 * Changed scrape button color to light blue
-* Added rounded corners to images
+* Updated title and key headers to bold text
 
 [Link to mission_to_mars_challenge code](mission_to_mars_challenge2.ipynb)
 
