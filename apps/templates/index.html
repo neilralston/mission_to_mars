@@ -14,7 +14,7 @@
     <div class="container">
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center">
-        <h1>Mission to Mars</h1>
+        <h1><strong>Mission to Mars</strong></h1>
         <!-- Add a button to activate scraping script -->
         <p><a class="btn btn-info btn-lg btn-block" href="/scrape" role="button">Push To Scrape New Data</a></p>
       </div>
@@ -23,7 +23,7 @@
         <div class="col-md-12">
           <div class="media">
             <div class="media-body">
-              <h2><u>Latest Mars News</u></h2>
+              <h2><u><strong>Latest Mars News</strong></u></h2>
               <h4 class="media-heading">{{ mars.news_title }}</h4>
               <p>{{ mars.news_paragraph }}</p>
             </div>
@@ -33,17 +33,17 @@
       <!-- Section for Featured Image and Facts table -->
       <div class="row" id="mars-featured-image">
         <div class="col-md-8">
-          <h2><u>Featured Mars Image</u></h2>
+          <h2><u><strong>Featured Mars Image</strong></u></h2>
           <img
             src="{{mars.featured_image }}"
-            class="img-responsive, img-rounded"
+            class="img-responsive"
             alt="Responsive image"
           />
         </div>
         <div class="col-md-4">
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
-            <h2><u>Mars Facts</u></h2>
+            <h2><u><strong>Mars Facts</strong></u></h2>
             {{ mars.facts | safe }}
           </div>
         </div>
@@ -51,14 +51,14 @@
 
       <!-- Section for Hemispheres-->
       <div class="row" id="mars-hemispheres">
-          <h2><u>Hemisphere Images</u></h2>
+          <h2><u><strong>Hemisphere Images</strong></u></h2>
         </div>
 
         {% for hemisphere in mars.hemispheres %} 
         <div class ="col-md-8">
           <img
           src="{{hemisphere.img_url }}"
-          class="img-responsive, img-rounded"
+          class="img-responsive"
           alt="Responsive image"
             <h4>{{hemisphere.title}}</h4>
           </div>
